@@ -1,7 +1,8 @@
 import bcrypt from "bcrypt";
-import mongoose, { Types } from "mongoose";
+import jwt from "jsonwebtoken";
+import mongoose from "mongoose";
+const { Schema, Types } = mongoose;
 import { CustomError } from "../helpers/customError.js";
-const { Schema } = mongoose;
 
 const userSchema = new Schema(
   {
@@ -52,11 +53,7 @@ const userSchema = new Schema(
     },
     resetPasswordOtp: String,
     resetPasswordExpires: Date,
-    isResetOtpVerified: {
-      type: Boolean,
-      default: false,
-    },
-    // ✅ optional (security)
+    // ✅ (security)
     passwordChangedAt: Date,
     lastOtpSentAt: Date,
     cart: [
@@ -74,6 +71,10 @@ const userSchema = new Schema(
     isPhoneVerified: {
       type: Boolean,
       default: false,
+    },
+    refreshToken: {
+      type: String,
+      trim: true,
     },
   },
   { minimize: false, timestamps: true },
@@ -93,7 +94,7 @@ userSchema.pre("save", async function () {
 // // make a hash password with mongoose middleware
 userSchema.pre("save", async function () {
   if (this.isModified("password")) {
-    const hashPassword = bcrypt.hash(this.password, 13);
+    const hashPassword = await bcrypt.hash(this.password, 12);
     this.password = hashPassword;
   }
 });
@@ -103,6 +104,42 @@ userSchema.methods.comparePassword = async function (humanPass) {
   return await bcrypt.compare(humanPass, this.password);
 };
 
-const userModel = mongoose.models.users || mongoose.model("users", userSchema);
+//  generate ACCESS_TOKEN_SECRET
+userSchema.methods.generateAccessToken = async function () {
+  return jwt.sign(
+    {
+      id: this._id,
+      name: this.name,
+      email: this.email,
+      roles: this.roles,
+      phone: this.phone,
+    },
+    process.env.ACCESS_TOKEN_SECRET,
+    { expiresIn: process.env.ACCESS_TOKEN_EXPIRE },
+  );
+};
+
+// generate REFRESH_TOKEN_SECRET
+userSchema.methods.generateRefreshToken = async function () {
+  return jwt.sign(
+    {
+      id: this._id,
+    },
+    process.env.REFRESH_TOKEN_SECRET,
+    { expiresIn: process.env.REFRESH_TOKEN_EXPIRE },
+  );
+};
+
+// verify ACCESS_TOKEN
+userSchema.methods.verifyAccessToken = async function (token) {
+  return jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+};
+
+// verify REFRESH_TOKEN
+userSchema.methods.verifyRefreshToken = async function (token) {
+  return jwt.verify(token, process.env.REFRESH_TOKEN_SECRET);
+};
+
+const userModel = mongoose.models.User || mongoose.model("User", userSchema);
 
 export default userModel;

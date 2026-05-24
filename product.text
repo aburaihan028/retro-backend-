@@ -1,0 +1,279 @@
+1.
+name: Nike Air Max
+description: Premium running shoes for men
+price: 4500
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068800
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: Black
+color[1]: White
+
+2.
+name: Adidas Ultraboost
+description: Comfortable sports shoes for daily running
+price: 5200
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068801
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: Blue
+color[1]: White
+
+3.
+name: Puma Street Runner
+description: Stylish sneakers for casual wear
+price: 3900
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068802
+sizes[0]: S
+sizes[1]: M
+sizes[2]: L
+color[0]: Red
+color[1]: Black
+
+4.
+name: Reebok Flex Move
+description: Lightweight gym shoes for men
+price: 4100
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068803
+sizes[0]: M
+sizes[1]: XL
+sizes[2]: XXL
+color[0]: Grey
+color[1]: Black
+
+5.
+name: New Balance Fresh Foam
+description: Soft cushion running shoes
+price: 6000
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068804
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: White
+color[1]: Green
+
+6.
+name: Converse Classic High
+description: Trendy high top sneakers
+price: 3500
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068805
+sizes[0]: S
+sizes[1]: M
+sizes[2]: L
+color[0]: Black
+color[1]: Red
+
+7.
+name: Vans Old Skool
+description: Skate inspired casual sneakers
+price: 3700
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068806
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: Navy
+color[1]: White
+
+8.
+name: Under Armour Charged
+description: Durable sports shoes with grip sole
+price: 4900
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068807
+sizes[0]: M
+sizes[1]: XL
+sizes[2]: XXL
+color[0]: Black
+color[1]: Orange
+
+9.
+name: Skechers Go Walk
+description: Comfortable walking shoes
+price: 3200
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068808
+sizes[0]: S
+sizes[1]: M
+sizes[2]: L
+color[0]: Grey
+color[1]: Blue
+
+10.
+name: Asics Gel Kayano
+description: High performance running shoes
+price: 6800
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068809
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: White
+color[1]: Black
+
+11.
+name: Fila Urban Step
+description: Casual sneakers with modern design
+price: 2900
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068810
+sizes[0]: S
+sizes[1]: M
+sizes[2]: XL
+color[0]: Brown
+color[1]: White
+
+12.
+name: Jordan Retro High
+description: Basketball shoes with premium quality
+price: 8500
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068811
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XXL
+color[0]: Red
+color[1]: White
+
+13.
+name: Brooks Ghost
+description: Smooth and responsive running shoes
+price: 5700
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068812
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: Blue
+color[1]: Grey
+
+14.
+name: Hoka Clifton
+description: Extra cushioned marathon shoes
+price: 7200
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068813
+sizes[0]: M
+sizes[1]: XL
+sizes[2]: XXL
+color[0]: Yellow
+color[1]: White
+
+15.
+name: Lacoste Court Master
+description: Elegant tennis inspired sneakers
+price: 5600
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068814
+sizes[0]: S
+sizes[1]: M
+sizes[2]: L
+color[0]: White
+color[1]: Green
+
+16.
+name: Timberland Trekker
+description: Outdoor trekking shoes for adventure
+price: 7600
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068815
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XXL
+color[0]: Brown
+color[1]: Black
+
+17.
+name: Campus Active Pro
+description: Affordable sports shoes for students
+price: 2400
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068816
+sizes[0]: S
+sizes[1]: M
+sizes[2]: L
+color[0]: Black
+color[1]: Blue
+
+18.
+name: Bata Power Runner
+description: Everyday running shoes with comfort
+price: 2800
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068817
+sizes[0]: M
+sizes[1]: L
+sizes[2]: XL
+color[0]: Grey
+color[1]: Red
+
+19.
+name: Woodland Hiking Pro
+description: Rugged outdoor hiking shoes
+price: 6900
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: true
+date: 1715068818
+sizes[0]: M
+sizes[1]: XL
+sizes[2]: XXL
+color[0]: Olive
+color[1]: Brown
+
+20.
+name: Lee Cooper Casual Fit
+description: Everyday casual sneakers for men
+price: 3300
+category: 664f1a2b3c4d5e6f7a8b9c0d
+subCategory: 664f1a2b3c4d5e6f7a8b9c0e
+bestseller: false
+date: 1715068819
+sizes[0]: S
+sizes[1]: M
+sizes[2]: L
+color[0]: White
+color[1]: Navy

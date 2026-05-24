@@ -2,14 +2,15 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import routes from "./routes/index.api.js";
-import { globalErrorHandler } from "./helpers/globalErrorHandler.js";
+import routes from "./src/routes/index.api.js";
+import { globalErrorHandler } from "./src/helpers/globalErrorHandler.js";
+
 // App Config
 const app = express();
 
 // all global middlewares
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); // HTML form data handle করে
 app.use(cookieParser());
 app.use(
   cors({

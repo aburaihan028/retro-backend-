@@ -1,7 +1,7 @@
 export const asyncHandler = (callback) => {
   return async (req, res, next) => {
     try {
-      await callback(req, res);
+      await callback(req, res, next);
     } catch (error) {
       next(error);
     }

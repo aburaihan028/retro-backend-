@@ -1,1 +1,31 @@
-npm i cors dotenv express jsonwebtoken mongoose multer nodemon razorpay stripe validator cloudinary bcrypt
+// npm i cors dotenv express jsonwebtoken mongoose multer nodemon razorpay stripe validator cloudinary bcrypt slugify
+
+// HTTP status 402 সাধারণত payment এর জন্য,
+
+const data = await validateProduct(req);
+
+let allImageInfo = [];
+
+try {
+  // upload images
+  allImageInfo = await Promise.all(
+    data?.image?.map((img) => uploadCloudinaryFile(img.path)),
+  );
+
+  // create product
+  const product = await productModle.create({
+    ...data,
+    image: allImageInfo,
+  });
+
+  apiResponse.sendSucess(res, 201, "Product created successfully", product);
+} catch (error) {
+  // rollback uploaded images
+  if (allImageInfo.length > 0) {
+    await Promise.all(
+      allImageInfo.map((img) => deleteCloudinaryFile(img.publicId)),
+    );
+  }
+
+  throw error;
+}
